@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+}
+
+#logo {
+    width: 50px;
+    margin: 50px auto;
+}
+
+#logo, #logo img {
+    width: 50px;
+}
+
+.nav-link {
+    width: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    color: black;
+}
+
+a:hover, #file-icon svg:hover, button svg:hover, button:hover {
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.actived {
+    opacity: 0.5;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+#portrait .overlay svg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: white; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+.modal audio {
+    width: revert !important;
+}
+
+@media (max-width: 991px) {
+    html, body {
+        overflow: hidden;
+    }
+    #nav-bottom {
+        background-color: white;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .input-comment {
+        bottom: 78px !important;
+    }
+
+    .espace-messages {
+        height: calc(100% - 300px) !important;
+    }
+}
+
+@media (max-height : 655px) and (min-width: 991px) {
+    #nav-bottom {
+        z-index: 5;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+}
+
+/* Profil vue */
+
+.col-xxl-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1400px) {
+    .col-xxl-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
